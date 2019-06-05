@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Login Page Case Study - Roman Belopolsky</title>
+  <title>Tutorial Flow Case Study - Roman Belopolsky</title>
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" type="image/png" href="../favicon.png">
@@ -38,7 +38,7 @@
                 <li><a href="#porfolioSection">Work</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-            <p class="page-label caps fadable hidden-s"><b>Case Study</b> Login Page</p>
+            <p class="page-label caps fadable hidden-s"><b>Case Study</b> Tutorial Flow</p>
             <p class="copyright fadable hidden-s">Copyright © Roman Belopolsky 2019. All rights reserved.</p>
         </div>
         <div id="scrollDownIcon" class="scroll-down-icon mouse">
@@ -54,7 +54,7 @@
       <div class="container">
         <div class="row">
           <div class="headline">
-            <h1>Login page redesign</h1>
+            <h1>Tutorial flow</h1>
             <br/>
             <ul class="caps feature-list">
                   <li>User experience</li>
@@ -62,7 +62,7 @@
                   <li>UI Design</li>
             </ul>
             <br/>
-            <p class="caps">2019</p>
+            <p class="caps">2018</p>
             <br/><br/>
             <p class="caps">Toolkit</p>
             <ul class="inline-list toolkit-list">
@@ -82,21 +82,54 @@
             <div class="columns eight">
                 <div id="subSectionOne" class="subsection">
                     <h4>I. Goals</h4>
-                    <p>My goals were: improve user experience by updating the interface- esthetically and functionally. Which would in turn reduce frustration and attrition rate for the page. I also saw an opportunity to extend our brand identity by making the page unique and consistent with our overall esthetic. However, it was also important to maintain a familiar layout to avoid interrupting the users' expected interaction pattern for a login page.</p>
+                    <p>My goal was to create an onboarding flow that would accomplish the following:<br>
+                        <ol>
+                            <li>Educate new users on the survey taking process and set expectations.</li>
+                            <li>Have users complete their profile as part of the tutorial in order to ensure they have an optimal experience once they finish onboarding.</li>
+                            <li>Reward users for taking the time to complete the tutorial.</li>
+                        </ol>
+                    </p>
                     <br/><br/>
                 </div>
                 <div id="subSectionTwo" class="subsection">
                     <h4>II. Research</h4>
-                    <p>The first step was to dig into the data we already had. The page did have a high bounce and exit rate, however those markers were spread evenly across a wide variety of devices and browsers, which indicated that the problem was a bit more complex than simply adding conditions for mobile devices or cross browser evaluation. Page load speed was well below average as well.</p>
-                    <p>Needing more in-depth data, I implemented google analytics events on the page to track every category of error occuring on the form. After collecting sufficient data I found that password errors were uncommonly higher than others. Traffic was also spilling over onto other pages linked on the login page, in some scenarios that would be fine but for a login page we needed to improve conversion rate (logins) by focusing the flow to a single family of possible interactions: login, password retrieval and registration.</p>
+                    <p>Our onboarding flow and tutorial would have to be unique and tailored to our and our users’ needs. That being said the first step was still researching the onboarding flows of companies that took UX seriously and those of respectable competitors. I spent some time researching recent articles on modern standards and considerations for onboarding flow UX. Then I compiled a list of pros and cons and insights gained from that research and combined it with my own ideas and started wireframing the basic flow.</p>
+                    <p>The first step would be to funnel users into the tutorial after finishing their registration. Completing the tutorial would be beneficial for the user and if I did my job well it would be an enjoyable experience and a great way to start their membership.</p>
+                    <p>Next I plotted the steps they would take.</p>
+                    <p><b>1. An introduction that accomplished the following:</b></p>
+                    <ul class="unstyled shifted">
+                        <li>A. Thanked users- to show gratitude</li>
+                        <li>B. Explained that the tutorial would prepare them to be optimally successful- to set expectations</li>
+                        <li>C. Promised a reward for completing the tutorial- to incentivise the user</li>
+                    </ul>
+                    <p><b>2. A brief education on the steps involved and language they would encounter taking live surveys</b></p>
+                    <p><b>3. A qualifier that accomplished:</b></p>
+                    <ul class="unstyled shifted">
+                        <li>A. Reiterated the purpose of a qualifier</li>
+                        <li>B. Simulated the real experience of qualifying for a survey</li>
+                        <li>C. Collected the profile data we needed to later match them high paying surveys</li>
+                    </ul>
+                    <p><b>4. A survey that accomplished:</b></p>
+                    <ul class="unstyled shifted">
+                        <li>A. Illustrated to the user that surveys can be fun and painless</li>
+                        <li>B. Used questions that provided data for fun infographics and articles our social media team could use</li>
+                        <li>C. Explains that the data they give us is encrypted and protected</li>
+                    </ul>
+                    <p><b>5. A status page that accomplished:</b></p>
+                    <ul class="unstyled shifted">
+                        <li>A. Shows the user the final status page that they would encounter at the end of live surveys</li>
+                        <li>B. Rewards the user for completing the tutorial</li>
+                        <li>C. Thanks the user for taking the time to complete the tutorial</li>
+                        <li>D. Moved the user on directly to live surveys tailored to their profiles now that we had enough data to do so</li>
+                    </ul>
                     <br/><br/>
                 </div>
                 <div id="subSectionThree" class="subsection">
                     <h4>III. Hypotheses</h4>
                     <ol>
-                        <li>Adding more specific password validation copy would reduce the number of repeated password errors per session</li>
-                        <li>Adding a show/hide mechanism to the password field would reduce overall password errors</li>
-                        <li>Removing all extraneous links, including removing global navigation and footer navigation, would increase click through rate to the member area homepage</li>
+                        <li>The tutorial would significantly increase profile completions for new users</li>
+                        <li>Users that finished the tutorial would show, at the very least, a jump in day one revenue and ideally the average LTV of users accrued after the tutorial went live would outpace the previous standard</li>
+                        <li>By keeping the tutorial simple and incremented we would see only a marginal attrition rate from start to finish</li>
                     </ol>
                     <br/><br/>
                 </div>
@@ -113,9 +146,9 @@
                 <div id="subSectionSix" class="subsection">
                     <h4>VI. Results</h4>
                     <ol>
-                        <li>Adding more specific password validation copy would reduce the number of repeated password errors per session.<br><b class="text-green">53% decrease in repeated password errors per session.</b></li>
-                        <li>Adding a show/hide mechanism to the password field would reduce overall password errors<br><b class="text-green">27% decrease in incorrect password errors.</b></li>
-                        <li>Removing all extraneous links, including removing global navigation and footer navigation, would increase click through rate to the member area homepage<br><b class="text-green">23% increase in CTR from sign in page to member area.</b></li>
+                        <li>The tutorial would significantly increase profile completions for new users.<br><b class="text-green">Profile completions increased from 43% to 90% for new users.</b></li>
+                        <li>Adding a show/hide mechanism to the password field would reduce overall password errors<br><b class="text-green">We recorded an average 12% increase in day one revenue for new users.</b></li>
+                        <li>Removing all extraneous links, including removing global navigation and footer navigation, would increase click through rate to the member area homepage<br><b class="text-green">Each page in the tutorial flow showed an exit rate of 4% or less.</b></li>
                     </ol>
                     <br/><br/>
                 </div>

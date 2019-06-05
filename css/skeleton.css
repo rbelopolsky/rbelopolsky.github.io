@@ -240,7 +240,7 @@ a {
     transition: 250ms ease;
 }
 a:hover {
-  color: #55E6C1;
+  color: #26de81;
   cursor: pointer;}
 
 
@@ -265,7 +265,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #55E6C1;
+  border: 1px solid #26de81;
   cursor: pointer;
   box-sizing: border-box;
   font-weight: 400;
@@ -283,7 +283,7 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background: #55E6C1;
+  background: #26de81;
   color: #fff;
   outline: 0; }
 .button.button-primary,
@@ -395,6 +395,9 @@ li {
   margin-bottom: 1rem; }
 ul.unstyled{
     list-style: none;
+}
+ul.unstyled.shifted{
+    margin-left: 20px;
 }
 ul.nav-desktop li{
     display: inline;
@@ -617,7 +620,7 @@ hr {
       display: inline-block;
   }
   .toc a.active{
-      color:#55E6C1;
+      color:#26de81;
   }
   .fadable{
       z-index: 999;
@@ -639,6 +642,15 @@ hr {
   }
   .opacity-0{
       opacity: 0;
+  }
+  .text-green{
+      color:#26de81;
+  }
+  .text-blue{
+      color:#4b7bec;
+  }
+  .text-red{
+      color:#fc5c65;
   }
 
 
