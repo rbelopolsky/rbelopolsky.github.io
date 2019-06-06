@@ -289,7 +289,9 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   background: #26de81;
   color: #fff;
-  outline: 0; }
+  outline: 0;
+  cursor: pointer;
+    }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -681,6 +683,17 @@ hr {
   #subSectionFive li, #subSectionSix li{
       margin-bottom: 40px;
   }
+  .button-with-icon{
+      padding-left: 50px;
+      position: relative;
+  }
+  .button-with-icon img{
+      width: 20px;
+      position: absolute;
+      left: 15px;
+      top: 8px;
+  }
+
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
