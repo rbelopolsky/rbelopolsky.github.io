@@ -24,6 +24,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/fslightbox.min.css">
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -89,7 +91,6 @@
                             <li>Reward users for taking the time to complete the tutorial.</li>
                         </ol>
                     </p>
-                    <br/><br/>
                 </div>
                 <div id="subSectionTwo" class="subsection scrollspy">
                     <h4>II. Research</h4>
@@ -122,7 +123,6 @@
                         <li>C. Thanks the user for taking the time to complete the tutorial</li>
                         <li>D. Moved the user on directly to live surveys tailored to their profiles now that we had enough data to do so</li>
                     </ul>
-                    <br/><br/>
                 </div>
                 <div id="subSectionThree" class="subsection scrollspy">
                     <h4>III. Hypotheses</h4>
@@ -131,26 +131,32 @@
                         <li>Users that finished the tutorial would show, at the very least, a jump in day one revenue and ideally the average LTV of users accrued after the tutorial went live would outpace the previous standard</li>
                         <li>By keeping the tutorial simple and incremented we would see only a marginal attrition rate from start to finish</li>
                     </ol>
-                    <br/><br/>
                 </div>
                 <div id="subSectionFour" class="subsection scrollspy">
-                    <h4>IV. Before</h4>
-                    <img class="stretch lazy" data-src="../img/study-img/study-login-old.png"/>
-                    <br/><br/>
+                    <h4>IV. After</h4>
+                    <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-tutorial-1.png">
+                        <img class="stretch lazy" data-src="../img/study-img/study-tutorial-1.png"/>
+                    </a>
+                    <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-tutorial-2.png">
+                        <img class="stretch lazy" data-src="../img/study-img/study-tutorial-2.png"/>
+                    </a>
+                    <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-tutorial-3.png">
+                        <img class="stretch lazy" data-src="../img/study-img/study-tutorial-3.png"/>
+                    </a>
+                    <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-tutorial-4.png">
+                        <img class="stretch lazy" data-src="../img/study-img/study-tutorial-4.png"/>
+                    </a>
+                    <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-tutorial-5.png">
+                        <img class="stretch lazy" data-src="../img/study-img/study-tutorial-5.png"/>
+                    </a>
                 </div>
                 <div id="subSectionFive" class="subsection scrollspy">
-                    <h4>V. After</h4>
-                    <img class="stretch lazy" data-src="../img/study-img/study-login-new.png"/>
-                    <br/><br/>
-                </div>
-                <div id="subSectionSix" class="subsection scrollspy">
-                    <h4>VI. Results</h4>
+                    <h4>V. Results</h4>
                     <ol>
                         <li>The tutorial would significantly increase profile completions for new users.<br><b class="text-green">Profile completions increased from 43% to 90% for new users.</b></li>
                         <li>Adding a show/hide mechanism to the password field would reduce overall password errors<br><b class="text-green">We recorded an average 12% increase in day one revenue for new users.</b></li>
                         <li>Removing all extraneous links, including removing global navigation and footer navigation, would increase click through rate to the member area homepage<br><b class="text-green">Each page in the tutorial flow showed an exit rate of 4% or less.</b></li>
                     </ol>
-                    <br/><br/>
                 </div>
             </div>
             <div class="columns three offset-by-one hidden-s">
@@ -160,9 +166,8 @@
                         <li class="active"><a href="#subSectionOne"><span class="toc-number">I.</span>Goals</a></li>
                         <li><a href="#subSectionTwo"><span class="toc-number">II.</span>Research</a></li>
                         <li><a href="#subSectionThree"><span class="toc-number">III.</span>Hypotheses</a></li>
-                        <li><a href="#subSectionFour"><span class="toc-number">IV.</span>Before</a></li>
-                        <li><a href="#subSectionFive"><span class="toc-number">V.</span>After</a></li>
-                        <li><a href="#subSectionSix"><span class="toc-number">VI.</span>Results</a></li>
+                        <li><a href="#subSectionFour"><span class="toc-number">IV.</span>After</a></li>
+                        <li><a href="#subSectionFive"><span class="toc-number">V.</span>Results</a></li>
                     </ul>
                 </div>
             </div>
@@ -179,5 +184,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.0.2/smooth-scroll.min.js"></script>
 <script src="../js/custom.js"></script>
 <script src="../js/vanilla-scrollspy.js"></script>
+<script src="../js/fslightbox.min.js"></script>
+
 </body>
 </html>

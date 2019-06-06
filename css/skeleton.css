@@ -652,7 +652,12 @@ hr {
   .text-red{
       color:#fc5c65;
   }
-
+  .subsection {
+      margin-bottom: 80px;
+  }
+  .subsection img {
+      margin-bottom: 40px;
+  }
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
