@@ -619,7 +619,7 @@ hr {
       width: 50px;
       display: inline-block;
   }
-  .toc a.active{
+  .toc li.active a{
       color:#26de81;
   }
   .fadable{
@@ -679,6 +679,7 @@ there.
 @media (max-width: 769px) {
     .overlay-content, .columns {
         width: 100%!important;
+        margin: 0;
     }
     .hidden-s{
         display: none;

@@ -1,26 +1,5 @@
 // Scrollspy Vanilla tweaked for table of contents
-(function() {
-  'use strict';
 
-  var section = document.querySelectorAll(".subsection");
-  var sections = {};
-  var i = 0;
-
-  Array.prototype.forEach.call(section, function(e) {
-    sections[e.id] = e.offsetTop+950;
-  });
-
-  window.onscroll = function() {
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-    for (i in sections) {
-      if (sections[i] <= scrollPosition) {
-        document.querySelector('.active').setAttribute('class', ' ');
-        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
-      }
-    }
-  };
-})();
 
 // Initiate smooth scroll
 var scroll = new SmoothScroll('a[href*="#"]', {
@@ -35,7 +14,7 @@ if (document.getElementById("tableOfContents")){
 }
 // Show scroll top button when appropriate and fade frame
 contentId = document.getElementById("mainContent");
-showScroll = document.getElementById("scrollTop");
+showScroll = document.getElementById("scrollTopButton");
 
 // .querySelector('.overlay').classList.add(
 var myScrollFunc = function() {

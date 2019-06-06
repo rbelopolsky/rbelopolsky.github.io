@@ -46,7 +46,7 @@
                 <span class="mouse-wheel"></span>
             </div>
         </div>
-        <a id="scrollTop" class="scroll-top opacity-0" href="#"><img class="scroll-icon" src="../img/angle-down.png"/></a>
+        <a id="scrollTopButton" class="scroll-top opacity-0" href="#"><img class="scroll-icon" src="../img/angle-down.png"/></a>
   </div>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -80,18 +80,18 @@
     <div class="container">
         <div class="row">
             <div class="columns eight">
-                <div id="subSectionOne" class="subsection">
+                <div id="subSectionOne" class="subsection scrollspy">
                     <h4>I. Goals</h4>
                     <p>My goals were: improve user experience by updating the interface- esthetically and functionally. Which would in turn reduce frustration and attrition rate for the page. I also saw an opportunity to extend our brand identity by making the page unique and consistent with our overall esthetic. However, it was also important to maintain a familiar layout to avoid interrupting the users' expected interaction pattern for a login page.</p>
                     <br/><br/>
                 </div>
-                <div id="subSectionTwo" class="subsection">
+                <div id="subSectionTwo" class="subsection scrollspy">
                     <h4>II. Research</h4>
                     <p>The first step was to dig into the data we already had. The page did have a high bounce and exit rate, however those markers were spread evenly across a wide variety of devices and browsers, which indicated that the problem was a bit more complex than simply adding conditions for mobile devices or cross browser evaluation. Page load speed was well below average as well.</p>
                     <p>Needing more in-depth data, I implemented google analytics events on the page to track every category of error occuring on the form. After collecting sufficient data I found that password errors were uncommonly higher than others. Traffic was also spilling over onto other pages linked on the login page, in some scenarios that would be fine but for a login page we needed to improve conversion rate (logins) by focusing the flow to a single family of possible interactions: login, password retrieval and registration.</p>
                     <br/><br/>
                 </div>
-                <div id="subSectionThree" class="subsection">
+                <div id="subSectionThree" class="subsection scrollspy">
                     <h4>III. Hypotheses</h4>
                     <ol>
                         <li>Adding more specific password validation copy would reduce the number of repeated password errors per session</li>
@@ -100,17 +100,17 @@
                     </ol>
                     <br/><br/>
                 </div>
-                <div id="subSectionFour" class="subsection">
+                <div id="subSectionFour" class="subsection scrollspy">
                     <h4>IV. Before</h4>
                     <img class="stretch lazy" data-src="../img/study-img/study-login-old.png"/>
                     <br/><br/>
                 </div>
-                <div id="subSectionFive" class="subsection">
+                <div id="subSectionFive" class="subsection scrollspy">
                     <h4>V. After</h4>
                     <img class="stretch lazy" data-src="../img/study-img/study-login-new.png"/>
                     <br/><br/>
                 </div>
-                <div id="subSectionSix" class="subsection">
+                <div id="subSectionSix" class="subsection scrollspy">
                     <h4>VI. Results</h4>
                     <ol>
                         <li>Adding more specific password validation copy would reduce the number of repeated password errors per session.<br><b class="text-green">53% decrease in repeated password errors per session.</b></li>
@@ -124,7 +124,7 @@
                 <div id="tableOfContents" class="toc u-pull-right" data-margin-top="40">
                     <p class="caps">TABLE OF CONTENTS</p>
                     <ul class="unstyled">
-                        <li><a class="active" href="#subSectionOne"><span class="toc-number">I.</span>Goals</a></li>
+                        <li class="active"><a href="#subSectionOne"><span class="toc-number">I.</span>Goals</a></li>
                         <li><a href="#subSectionTwo"><span class="toc-number">II.</span>Research</a></li>
                         <li><a href="#subSectionThree"><span class="toc-number">III.</span>Hypotheses</a></li>
                         <li><a href="#subSectionFour"><span class="toc-number">IV.</span>Before</a></li>
@@ -145,5 +145,6 @@
 <script src="../js/lazyload.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.0.2/smooth-scroll.min.js"></script>
 <script src="../js/custom.js"></script>
+<script src="../js/vanilla-scrollspy.js"></script>
 </body>
 </html>
