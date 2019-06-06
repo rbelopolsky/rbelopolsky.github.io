@@ -601,7 +601,7 @@ hr {
   }
 
   .overlay-parent:hover img {
-    opacity: 0.3;
+    opacity: 0.1;
   }
 
   .overlay-parent:hover .overlay-content {
@@ -657,6 +657,16 @@ hr {
   }
   .subsection img {
       margin-bottom: 40px;
+  }
+  .subsection a img{
+      transform: scale(1);
+      transition: 250ms cubic-bezier(0.18, 0.89, 0.32, 1.5);
+      opacity: 1;
+  }
+  .subsection a img:hover{
+      transform: scale(1.05);
+      transition: 250ms cubic-bezier(0.18, 0.89, 0.32, 1.5);
+      opacity: .7;
   }
 
 /* Media Queries
