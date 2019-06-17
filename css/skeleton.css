@@ -402,7 +402,7 @@ li {
 ul.unstyled{
     list-style: none;
 }
-ul.unstyled.shifted{
+ul.unstyled.shifted, ol.shifted{
     margin-left: 20px;
 }
 ul.nav-desktop li{
