@@ -34,6 +34,18 @@
 .section-top{
     padding: 170px 0;
 }
+.section-light-blue{
+    background: #eff8ff;
+    position: relative;
+    overflow: hidden;
+}
+img.splash {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    bottom: 0;
+    right: 0;
+}
 .section.reduce-padding{
     padding: 30px;
 }
@@ -670,12 +682,12 @@ hr {
   .subsection img {
       margin-bottom: 40px;
   }
-  .subsection a img{
+  .subsection a img, .article-wide img{
       transform: scale(1);
       transition: 250ms cubic-bezier(0.18, 0.89, 0.32, 1.5);
       opacity: 1;
   }
-  .subsection a img:hover{
+  .subsection a img:hover, .article-wide img:hover{
       transform: scale(1.05);
       transition: 250ms cubic-bezier(0.18, 0.89, 0.32, 1.5);
       opacity: .7;
@@ -693,7 +705,25 @@ hr {
       left: 15px;
       top: 8px;
   }
-
+  .article-wide{
+      width: 90%;
+      max-width: 90%;
+  }
+  .article-wide .subsection{
+      max-width: 767px;
+      margin: auto;
+  }
+  .article-wide-featured-img {
+    margin: 120px 0;
+  }
+  .article-large-text {
+    max-width: 850px;
+    font-size: 52px;
+    text-align: center;
+    margin: 120px auto;
+    font-style: italic;
+}    font-size: 36px;
+    font-size: 24px;
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -713,7 +743,19 @@ there.
     .hidden-xs{
         display: none;
     }
-
+    .article-large-text {
+      font-size: 24px!important;
+    }
+    .article-wide {
+        width: 100%;
+        max-width: 100%;
+    }
+    .article-wide-featured-img, .article-large-text{
+        margin: 60px auto;
+    }
+    img.splash {
+        right:-200px;
+    }
 }
 
 /* Larger than tablet */
@@ -725,10 +767,19 @@ there.
     .hidden-s{
         display: none;
     }
+    .article-large-text {
+      font-size: 36px;
+    }
+    img.splash {
+        opacity: .05
+    }
 }
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (max-width: 1000px) {
+    img.splash {
+        right:-200px;
+    }
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
