@@ -712,7 +712,7 @@ hr {
   .article-wide .subsection{
       max-width: 660px;
         margin: auto;
-        font-size: 1.6em;
+        font-size: 18px;
   }
   .article-wide-featured-img {
     margin: 120px 0;
