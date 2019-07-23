@@ -29,15 +29,44 @@
 </head>
 <body>
     <div id="globalElements" class="global-elements">
-          <div id="mainFrame">
-              <p class="inline logo fadable"><a href="#">RB.UX</a></p>
-              <ul class="unstyled nav-desktop fadable">
+        <div id="mainFrame">
+            <p class="inline logo fadable"><a href="#">RB.UX</a></p>
+                <!-- Desktop menu -->
+                <ul class="unstyled nav-desktop fadable hidden-s">
                   <li><a href="#mainContent">Work</a></li>
                   <li><a href="#contact">Contact</a></li>
-              </ul>
-              <p class="page-label caps fadable hidden-xs"><b>UX/UI</b> Portfolio</p>
-              <p class="copyright fadable hidden-xs">Copyright © Roman Belopolsky 2019. All rights reserved.</p>
-          </div>
+                  <li><a href="img/rb-resume-final.pdf">Resume</a></li>
+                </ul>
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-button-container hidden visible-s" id="mobileMenuToggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                    <p class="hidden">Close menu</p>
+                </div>
+                <!-- Mobile menu -->
+                <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                    <nav class="mobile-overlay-menu">
+                        <ul>
+                            <li><a href="#mainContent">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="img/rb-resume-final.pdf">Resume</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu-footer text-center">
+                        <div class="mobile-menu-social-links">
+                            <h5>Get in touch</h5>
+                            <p class="caps"><a href="mailto:rbelopolsky@gmail.com">Gmail</a></p>
+                            <p class="caps"><a href="https://www.linkedin.com/in/rbelopolsky" target="_blank">Linkedin</a></p>
+                        </div>
+                        <hr class="short"/>
+                        <p class="mobile-menu-copyright text-center">Copyright © Roman Belopolsky 2019.<br/>All rights reserved.</p>
+                    </div>
+                </div>
+
+                <p class="page-label caps fadable hidden-xs"><b>UX/UI</b> Portfolio</p>
+                <p class="copyright fadable hidden-xs">Copyright © Roman Belopolsky 2019. All rights reserved.</p>
+            </div>
         <div id="scrollDownIcon" class="scroll-down-icon mouse">
             <div class="mouse-icon">
                 <span class="mouse-wheel"></span>
@@ -53,8 +82,8 @@
           <div class="headline">
             <h1>Roman — A UX Designer with brand, product design, front-end development and data analysis expertise.</h1>
             <br/>
-            <a class="button" href="#mainContent">See work</a>
-            <a class="button button-second button-padding" href="#contact">Contact me</a>
+            <a class="button button-mobile-block" href="#mainContent">See work</a>
+            <a class="button button-mobile-block button-second button-padding" href="#contact">Contact me</a>
             </div>
           </div>
         </div>
@@ -147,8 +176,8 @@
           <div class="headline">
             <h3>Get in touch with me for freelance collaborations or if you're looking for an addition to a UX or product team.</h3>
             <br/>
-            <a class="button button-with-icon" href="mailto:rbelopolsky@gmail.com"><img src="img/logo-google.png"/> GMAIL</a>
-            <a class="button button-with-icon button-second" target="_blank" href="https://www.linkedin.com/in/rbelopolsky"><img src="img/logo-linkedin.png"/> LINKEDIN</a>
+            <a class="button button-with-icon button-mobile-block" href="mailto:rbelopolsky@gmail.com"><img src="img/logo-google.png"/> GMAIL</a>
+            <a class="button button-with-icon button-second button-mobile-block" target="_blank" href="https://www.linkedin.com/in/rbelopolsky"><img src="img/logo-linkedin.png"/> LINKEDIN</a>
             </div>
           </div>
         </div>

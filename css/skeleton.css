@@ -154,7 +154,9 @@ body {
   /* font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-family: niveau-grotesk, sans-serif;
   color: #505050; }
-
+body.fixed{
+    overflow: hidden;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -179,7 +181,9 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
 }
-
+.text-center{
+    text-align: center;
+}
 p {
   margin-top: 0; }
 .caps{
@@ -191,14 +195,15 @@ p {
 }
 .logo{
     position: fixed;
-    left: 40px;
+    left: 30px;
     top: 17px;
     font-size: 24px;
     font-weight: 700;
+    z-index: 1001!important;
 }
 .nav-desktop{
     position: fixed;
-    right: 40px;
+    right: 30px;
     top: 24px;
 }
 .page-label{
@@ -208,7 +213,7 @@ p {
     left: -37px;
     letter-spacing: 3px;
     bottom: 20px;
-    left: 47px;
+    left: 38px;
     transform-origin: left;
     margin: 0;
     width: 0;
@@ -217,7 +222,7 @@ p {
 .copyright{
     position: fixed;
     bottom: 5px;
-    right: 40px;
+    right: 30px;
     font-size: 11px;
 }
 
@@ -228,7 +233,7 @@ p {
     border-radius: 100px;
     position: fixed;
     bottom: 80px;
-    right: 40px;
+    right: 30px;
     transform: scale(0);
     transition: 250ms cubic-bezier(0.18, 0.89, 0.32, 1.5);
     z-index: 999;
@@ -269,7 +274,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height: 38px;
-  padding: 0 30px;
+  padding: 0 20px;
   color: #555;
   text-align: center;
   font-size: 11px;
@@ -331,6 +336,7 @@ input[type="button"].button-primary:focus {
 .button-second{
     margin-left: 2rem;
 }
+
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -509,7 +515,11 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
-
+hr.short{
+    width: 60px;
+    margin: 30px auto;
+    border-width: 1px;
+}
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -530,7 +540,7 @@ hr {
   .scroll-down-icon{
       position: fixed;
       bottom: 80px;
-      right: 40px;
+      right: 30px;
       opacity: 1;
       transition: 250ms cubic-bezier(0.18, 0.89, 0.32, 1.5);
       z-index: 999;
@@ -726,6 +736,215 @@ hr {
     font-style: italic;
 }    font-size: 36px;
     font-size: 24px;
+/* Mobile nav */
+
+    /* $color-background: #F5F5F5;
+    #FF5252: #FF5252;
+    #FFF: #FFF;
+    #FFF: #FFF;
+
+    27px: 27px;
+    35px;: 35px; */
+
+
+
+    .mobile-overlay-menu a {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        color: #FF5252;
+        text-decoration: none;
+        font-size: 20px;
+        overflow: hidden;
+        top: 5px;
+    }
+
+    .mobile-overlay-menu a:after {
+      content: '';
+      position: absolute;
+      background: #FF5252;
+      height: 2px;
+      width: 0%;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 0;
+      transition: .35s ease;
+    }
+    .mobile-overlay-menu a:hover:after,
+    .mobile-overlay-menu a:focus:after,
+    .mobile-overlay-menu a:active:after {
+      width: 100%;
+    }
+
+    .mobile-menu-button-container {
+      position: fixed;
+      /* top: 24px;
+      right: 32px;
+      height: 27px;
+      width: 35px; */
+      top: 27px;
+    right: 30px;
+    height: 21px;
+    width: 21px;
+      cursor: pointer;
+      z-index: 100;
+      transition: opacity .25s ease;
+          z-index: 1001;
+    }
+    .mobile-menu-button-container:hover {
+        opacity: .7;
+    }
+
+    .mobile-menu-button-container.active p.hidden{
+        display: block;
+        font-size: 10px;
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        line-height: 1.2;
+        top: -3px;
+
+    }
+    .mobile-menu-button-container.active .top {
+          transform: translateY(8px) translateX(0) rotate(45deg);
+          background: #505050;
+    }
+    .mobile-menu-button-container.active .middle {
+          opacity: 0;
+          background: #505050;
+    }
+
+    .mobile-menu-button-container.active .bottom {
+          transform: translateY(-8px) translateX(0) rotate(-45deg);
+          background: #505050;
+    }
+
+    .mobile-menu-button-container span {
+      background: #505050;
+      border: none;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition:  all .35s ease;
+      cursor: pointer;
+    }
+    .mobile-menu-button-container span:nth-of-type(2) {
+          /* top: 11px; */
+          top:8px;
+        }
+
+    .mobile-menu-button-container span:nth-of-type(3) {
+          /* top: 22px; */
+          top: 16px;
+        }
+
+
+    .mobile-menu-overlay {
+      position: fixed;
+      background: #FFF;
+      top: 0;
+      bottom:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s, visibility .35s, height .35s;
+      overflow: hidden;
+  }
+    .mobile-menu-overlay.open {
+        opacity: 1;
+        visibility: visible;
+            z-index: 1000;
+
+    }
+    .mobile-overlay-menu li {
+          animation: fadeInRight .5s ease forwards;
+          animation-delay: .35s;
+    }
+    .mobile-overlay-menu li:nth-of-type(2) {
+            animation-delay: .4s;
+          }
+    .mobile-overlay-menu li:nth-of-type(3) {
+            animation-delay: .45s;
+          }
+    .mobile-overlay-menu li:nth-of-type(4) {
+            animation-delay: .50s;
+          }
+
+     .mobile-overlay-menu {
+        position: relative;
+        height: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 42px;
+        text-align: center;
+      }
+    .mobile-overlay-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+    }
+    .mobile-overlay-menu ul li{
+          display: block;
+          height: 25%;
+          height: calc(100% / 4);
+          min-height: 50px;
+          position: relative;
+          opacity: 0;
+    }
+    .mobile-overlay-menu ul li a {
+            display: block;
+            position: relative;
+            text-decoration: none;
+            overflow: hidden;
+    }
+    .mobile-overlay-menu ul li a:hover:after,
+    .mobile-overlay-menu ul li a:focus:after,
+    .mobile-overlay-menu ul li a:active:after {
+               width: 100%;
+             }
+
+    .mobile-overlay-menu ul li a:after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              width: 0%;
+              transform: translateX(-50%);
+              height: 3px;
+              background: #FFF;
+              transition: .35s;
+    }
+    .mobile-menu-copyright{
+        font-size: 12px;
+    }
+    .mobile-menu-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+    .mobile-menu-social-links p{
+        margin-bottom: 10px;
+    }
+
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        left: 20%;
+      }
+      100% {
+        opacity: 1;
+        left: 0;
+      }
+    }
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -736,7 +955,9 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-
+.hidden{
+    display: none;
+}
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
@@ -758,6 +979,10 @@ there.
     img.splash {
         right:-200px;
     }
+    .button-mobile-block{
+        margin: 5px 0;
+        width:100%;
+    }
 }
 
 /* Larger than tablet */
@@ -774,6 +999,12 @@ there.
     }
     img.splash {
         opacity: .05
+    }
+    .visible-s{
+        display: block;
+    }
+    .scroll-icon, .scroll-down-icon{
+        bottom: 30px;
     }
 }
 @media (max-width: 1100px) {

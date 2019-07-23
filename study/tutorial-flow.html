@@ -34,10 +34,38 @@
   <div id="globalElements" class="global-elements">
         <div id="mainFrame">
             <p class="inline logo fadable"><a href="/">RB.UX</a></p>
-            <ul class="unstyled nav-desktop fadable">
+            <!-- Desktop menu -->
+            <ul class="unstyled nav-desktop fadable hidden-s">
                 <li><a href="https://rbelopolsky.github.io/#mainContent">Work</a></li>
                 <li><a href="https://rbelopolsky.github.io/#contact">Contact</a></li>
+              <li><a href="https://rbelopolsky.github.io/img/rb-resume-final.pdf">Resume</a></li>
             </ul>
+            <!-- Mobile menu button -->
+            <div class="mobile-menu-button-container hidden visible-s" id="mobileMenuToggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+                <p class="hidden">Close menu</p>
+            </div>
+            <!-- Mobile menu -->
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                <nav class="mobile-overlay-menu">
+                    <ul>
+                        <li><a href="https://rbelopolsky.github.io/#mainContent">Work</a></li>
+                        <li><a href="https://rbelopolsky.github.io/#contact">Contact</a></li>
+                      <li><a href="https://rbelopolsky.github.io/img/rb-resume-final.pdf">Resume</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-footer text-center">
+                    <div class="mobile-menu-social-links">
+                        <h5>Get in touch</h5>
+                        <p class="caps"><a href="mailto:rbelopolsky@gmail.com">Gmail</a></p>
+                        <p class="caps"><a href="https://www.linkedin.com/in/rbelopolsky" target="_blank">Linkedin</a></p>
+                    </div>
+                    <hr class="short"/>
+                    <p class="mobile-menu-copyright text-center">Copyright © Roman Belopolsky 2019.<br/>All rights reserved.</p>
+                </div>
+            </div>
             <p class="page-label caps fadable hidden-s"><b>Case Study</b> Tutorial Flow</p>
             <p class="copyright fadable hidden-s">Copyright © Roman Belopolsky 2019. All rights reserved.</p>
         </div>

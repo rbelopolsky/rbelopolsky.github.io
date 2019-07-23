@@ -37,3 +37,13 @@ var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
     // ... more custom settings?
 });
+
+$('#mobileMenuToggle, .mobile-menu-overlay a').click(function() {
+   $('#mobileMenuToggle').toggleClass('active');
+   $('#mobileMenuOverlay').toggleClass('open');
+   $('body').toggleClass('fixed');
+  });
+
+//   $('#mobileMenuToggle a').click(function() {
+//
+// }
