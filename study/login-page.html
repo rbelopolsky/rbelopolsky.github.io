@@ -15,8 +15,8 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
-  <link rel="stylesheet" href="https://use.typekit.net/ewx7ato.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,500&family=Libre+Franklin:ital,wght@0,200;0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,7 +39,7 @@
               <li><a href="https://rbelopolsky.github.io/img/rb-resume-final.pdf">Resume</a></li>
             </ul>
             <!-- Mobile menu button -->
-            <div class="mobile-menu-button-container hidden visible-s" id="mobileMenuToggle">
+            <div class="mobile-menu-button-container hidden visible-s fadable" id="mobileMenuToggle">
                 <span class="top"></span>
                 <span class="middle"></span>
                 <span class="bottom"></span>
@@ -56,9 +56,9 @@
                 </nav>
                 <div class="mobile-menu-footer text-center">
                     <div class="mobile-menu-social-links">
-                        <h5>Get in touch</h5>
-                        <p class="caps"><a href="mailto:rbelopolsky@gmail.com">Gmail</a></p>
-                        <p class="caps"><a href="https://www.linkedin.com/in/rbelopolsky" target="_blank">Linkedin</a></p>
+                        <p><b>Get in touch</b></p>
+                        <p><a href="mailto:rbelopolsky@gmail.com">Gmail</a></p>
+                        <p><a href="https://www.linkedin.com/in/rbelopolsky" target="_blank">Linkedin</a></p>
                     </div>
                     <hr class="short"/>
                     <p class="mobile-menu-copyright text-center">Copyright © Roman Belopolsky 2019.<br/>All rights reserved.</p>
@@ -66,11 +66,6 @@
             </div>
             <p class="page-label caps fadable hidden-s"><b>Case Study</b> Login Page</p>
             <p class="copyright fadable hidden-s">Copyright © Roman Belopolsky 2019. All rights reserved.</p>
-        </div>
-        <div id="scrollDownIcon" class="scroll-down-icon mouse">
-            <div class="mouse-icon">
-                <span class="mouse-wheel"></span>
-            </div>
         </div>
         <a id="scrollTopButton" class="scroll-top opacity-0" href="#"><img class="scroll-icon" src="../img/angle-down.png"/></a>
   </div>
@@ -107,16 +102,16 @@
         <div class="row">
             <div class="columns eight">
                 <div id="subSectionOne" class="subsection scrollspy">
-                    <h4>I. Goals</h4>
+                    <h3>I. Goals</h3>
                     <p>My goals were: to improve user experience by updating the interface- aesthetically and functionally, which would, in turn, reduce frustration and attrition rate for the page. I also saw an opportunity to extend our brand identity by making the page unique and consistent with our overall aesthetic. However, it was also important to maintain a familiar layout to avoid interrupting the users' expected interaction pattern for a login page.</p>
                 </div>
                 <div id="subSectionTwo" class="subsection scrollspy">
-                    <h4>II. Research</h4>
+                    <h3>II. Research</h3>
                     <p>First, I dug into the data we collected on user behavior. The login page had a high bounce and exit rate. However, those markers were spread evenly across a wide variety of devices and browsers, which indicated that the problem was a bit more complex than simply adding conditions for mobile devices or cross browser evaluation. Page load speed also clocked in well below average.</p>
                     <p>Needing more in-depth data, I implemented google analytics events on the page to track every error category occuring on the form. After collecting sufficient data, I found that password errors were uncommonly higher than others. Traffic also spilled over onto other pages linked on the login page, which, in some scenarios, would be fine, but not in the case of a login page. We needed to improve conversion rate (logins) by focusing the flow to a single family of possible interactions: login, password retrieval and registration.</p>
                 </div>
                 <div id="subSectionThree" class="subsection scrollspy">
-                    <h4>III. Hypotheses</h4>
+                    <h3>III. Hypotheses</h3>
                     <ol>
                         <li>Adding more specific password validation copy would reduce the number of repeated password errors per session</li>
                         <li>Adding a show/hide mechanism to the password field would reduce overall password errors</li>
@@ -124,19 +119,19 @@
                     </ol>
                 </div>
                 <div id="subSectionFour" class="subsection scrollspy">
-                    <h4>IV. Before</h4>
+                    <h3>IV. Before</h3>
                     <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-login-old-2.png">
                         <img class="stretch lazy" data-src="../img/study-img/study-login-old-2.png"/>
                     </a>
                 </div>
                 <div id="subSectionFive" class="subsection scrollspy">
-                    <h4>V. After</h4>
+                    <h3>V. After</h3>
                     <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-login-new-1.png">
                         <img class="stretch lazy" data-src="../img/study-img/study-login-new-1.png"/>
                     </a>
                 </div>
                 <div id="subSectionSix" class="subsection scrollspy">
-                    <h4>VI. Results</h4>
+                    <h3>VI. Results</h3>
                     <ol>
                         <li>Adding more specific password validation copy would reduce the number of repeated password errors per session.<br><b class="text-blue">53% decrease in repeated password errors per session.</b></li>
                         <li>Adding a show/hide mechanism to the password field would reduce overall password errors<br><b class="text-blue">27% decrease in incorrect password errors.</b></li>
