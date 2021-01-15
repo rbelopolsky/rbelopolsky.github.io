@@ -1,173 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Login Page Case Study - Roman Belopolsky</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,500&family=Libre+Franklin:ital,wght@0,200;0,400;0,600;1,400&display=swap" rel="stylesheet">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/skeleton.css">
-  <link rel="stylesheet" href="../css/fslightbox.min.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../favicon.png">
-
-</head>
-<body>
-  <div id="globalElements" class="global-elements">
-        <div id="mainFrame">
-            <p class="inline logo fadable"><a href="/">RB.UX</a></p>
-            <ul class="unstyled nav-desktop fadable hidden-s">
-                <li><a href="https://rbelopolsky.github.io/#mainContent">Work</a></li>
-                <li><a href="https://rbelopolsky.github.io/#contact">Contact</a></li>
-              <li><a href="https://rbelopolsky.github.io/img/rb-resume-final.pdf">Resume</a></li>
-            </ul>
-            <!-- Mobile menu button -->
-            <div class="mobile-menu-button-container hidden visible-s fadable" id="mobileMenuToggle">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-                <p class="hidden">Close menu</p>
-            </div>
-            <!-- Mobile menu -->
-            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
-                <nav class="mobile-overlay-menu">
-                    <ul>
-                        <li><a href="https://rbelopolsky.github.io/#mainContent">Work</a></li>
-                        <li><a href="https://rbelopolsky.github.io/#contact">Contact</a></li>
-                      <li><a href="https://rbelopolsky.github.io/img/rb-resume-final.pdf">Resume</a></li>
-                    </ul>
-                </nav>
-                <div class="mobile-menu-footer text-center">
-                    <div class="mobile-menu-social-links">
-                        <p><b>Get in touch</b></p>
-                        <p><a href="mailto:rbelopolsky@gmail.com">Gmail</a></p>
-                        <p><a href="https://www.linkedin.com/in/rbelopolsky" target="_blank">Linkedin</a></p>
-                    </div>
-                    <hr class="short"/>
-                    <p class="mobile-menu-copyright text-center">Copyright © Roman Belopolsky 2019.<br/>All rights reserved.</p>
-                </div>
-            </div>
-            <p class="page-label caps fadable hidden-s"><b>Case Study</b> Login Page</p>
-            <p class="copyright fadable hidden-s">Copyright © Roman Belopolsky 2019. All rights reserved.</p>
-        </div>
-        <a id="scrollTopButton" class="scroll-top opacity-0" href="#"><img class="scroll-icon" src="../img/angle-down.png"/></a>
-  </div>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="section-top">
-      <div class="container">
-        <div class="row">
-          <div class="headline">
-            <h1>Login page redesign</h1>
-            <br/>
-            <ul class="caps feature-list">
-                  <li>User experience</li>
-                  <li>Front-end development</li>
-                  <li>UI Design</li>
-            </ul>
-            <br/>
-            <p class="caps">2019</p>
-            <br/><br/>
-            <p class="caps">Toolkit</p>
-            <ul class="inline-list toolkit-list">
-                <li><img src="../img/product-icons/photoshop.png"/></li>
-                <li><img src="../img/product-icons/illustrator.png"/></li>
-                <li><img src="../img/product-icons/atom.png"/></li>
-                <li><img src="../img/product-icons/ga.png"/></li>
-                <li><img src="../img/product-icons/optimize.png"/></li>
-            </ul>
-          </div>
+---
+layout: default
+title: Login Page Case Study - Roman Belopolsky
+nav-link: '/'
+---
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="section-top">
+    <div class="container">
+      <div class="row">
+        <div class="headline">
+          <h1>Login page redesign</h1>
+          <br/>
+          <ul class="caps feature-list">
+                <li>User experience</li>
+                <li>Front-end development</li>
+                <li>UI Design</li>
+          </ul>
+          <br/>
+          <p class="caps">2019</p>
+          <br/><br/>
+          <p class="caps">Toolkit</p>
+          <ul class="inline-list toolkit-list">
+              <li><img src="../img/product-icons/photoshop.png"/></li>
+              <li><img src="../img/product-icons/illustrator.png"/></li>
+              <li><img src="../img/product-icons/atom.png"/></li>
+              <li><img src="../img/product-icons/ga.png"/></li>
+              <li><img src="../img/product-icons/optimize.png"/></li>
+          </ul>
         </div>
       </div>
-  </div>
-  <div id="mainContent" class="section">
-    <div class="container">
-        <div class="row">
-            <div class="columns eight">
-                <div id="subSectionOne" class="subsection scrollspy">
-                    <h3>I. Goals</h3>
-                    <p>My goals were: to improve user experience by updating the interface- aesthetically and functionally, which would, in turn, reduce frustration and attrition rate for the page. I also saw an opportunity to extend our brand identity by making the page unique and consistent with our overall aesthetic. However, it was also important to maintain a familiar layout to avoid interrupting the users' expected interaction pattern for a login page.</p>
-                </div>
-                <div id="subSectionTwo" class="subsection scrollspy">
-                    <h3>II. Research</h3>
-                    <p>First, I dug into the data we collected on user behavior. The login page had a high bounce and exit rate. However, those markers were spread evenly across a wide variety of devices and browsers, which indicated that the problem was a bit more complex than simply adding conditions for mobile devices or cross browser evaluation. Page load speed also clocked in well below average.</p>
-                    <p>Needing more in-depth data, I implemented google analytics events on the page to track every error category occuring on the form. After collecting sufficient data, I found that password errors were uncommonly higher than others. Traffic also spilled over onto other pages linked on the login page, which, in some scenarios, would be fine, but not in the case of a login page. We needed to improve conversion rate (logins) by focusing the flow to a single family of possible interactions: login, password retrieval and registration.</p>
-                </div>
-                <div id="subSectionThree" class="subsection scrollspy">
-                    <h3>III. Hypotheses</h3>
-                    <ol>
-                        <li>Adding more specific password validation copy would reduce the number of repeated password errors per session</li>
-                        <li>Adding a show/hide mechanism to the password field would reduce overall password errors</li>
-                        <li>Removing all extraneous links, including global navigation and footer navigation, would increase click through rate to the member area homepage</li>
-                    </ol>
-                </div>
-                <div id="subSectionFour" class="subsection scrollspy">
-                    <h3>IV. Before</h3>
-                    <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-login-old-2.png">
-                        <img class="stretch lazy" data-src="../img/study-img/study-login-old-2.png"/>
-                    </a>
-                </div>
-                <div id="subSectionFive" class="subsection scrollspy">
-                    <h3>V. After</h3>
-                    <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-login-new-1.png">
-                        <img class="stretch lazy" data-src="../img/study-img/study-login-new-1.png"/>
-                    </a>
-                </div>
-                <div id="subSectionSix" class="subsection scrollspy">
-                    <h3>VI. Results</h3>
-                    <ol>
-                        <li>Adding more specific password validation copy would reduce the number of repeated password errors per session.<br><b class="text-blue">53% decrease in repeated password errors per session.</b></li>
-                        <li>Adding a show/hide mechanism to the password field would reduce overall password errors<br><b class="text-blue">27% decrease in incorrect password errors.</b></li>
-                        <li>Removing all extraneous links, including global navigation and footer navigation, would increase click through rate to the member area homepage<br><b class="text-blue">23% increase in CTR from sign in page to member area.</b></li>
-                    </ol>
-                </div>
-                <br/>
-                <a class="button" href="https://rbelopolsky.github.io/#mainContent">Back to case studies</a>
-            </div>
-            <div class="columns three offset-by-one hidden-s">
-                <div id="tableOfContents" class="toc u-pull-right" data-margin-top="40">
-                    <p class="caps">TABLE OF CONTENTS</p>
-                    <ul class="unstyled">
-                        <li class="active"><a href="#subSectionOne"><span class="toc-number">I.</span>Goals</a></li>
-                        <li><a href="#subSectionTwo"><span class="toc-number">II.</span>Research</a></li>
-                        <li><a href="#subSectionThree"><span class="toc-number">III.</span>Hypotheses</a></li>
-                        <li><a href="#subSectionFour"><span class="toc-number">IV.</span>Before</a></li>
-                        <li><a href="#subSectionFive"><span class="toc-number">V.</span>After</a></li>
-                        <li><a href="#subSectionSix"><span class="toc-number">VI.</span>Results</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
+</div>
+<div id="mainContent" class="section">
+  <div class="container">
+      <div class="row">
+          <div class="columns eight">
+              <div id="subSectionOne" class="subsection scrollspy">
+                  <h3>I. Goals</h3>
+                  <p>My goals were: to improve user experience by updating the interface- aesthetically and functionally, which would, in turn, reduce frustration and attrition rate for the page. I also saw an opportunity to extend our brand identity by making the page unique and consistent with our overall aesthetic. However, it was also important to maintain a familiar layout to avoid interrupting the users' expected interaction pattern for a login page.</p>
+              </div>
+              <div id="subSectionTwo" class="subsection scrollspy">
+                  <h3>II. Research</h3>
+                  <p>First, I dug into the data we collected on user behavior. The login page had a high bounce and exit rate. However, those markers were spread evenly across a wide variety of devices and browsers, which indicated that the problem was a bit more complex than simply adding conditions for mobile devices or cross browser evaluation. Page load speed also clocked in well below average.</p>
+                  <p>Needing more in-depth data, I implemented google analytics events on the page to track every error category occuring on the form. After collecting sufficient data, I found that password errors were uncommonly higher than others. Traffic also spilled over onto other pages linked on the login page, which, in some scenarios, would be fine, but not in the case of a login page. We needed to improve conversion rate (logins) by focusing the flow to a single family of possible interactions: login, password retrieval and registration.</p>
+              </div>
+              <div id="subSectionThree" class="subsection scrollspy">
+                  <h3>III. Hypotheses</h3>
+                  <ol>
+                      <li>Adding more specific password validation copy would reduce the number of repeated password errors per session</li>
+                      <li>Adding a show/hide mechanism to the password field would reduce overall password errors</li>
+                      <li>Removing all extraneous links, including global navigation and footer navigation, would increase click through rate to the member area homepage</li>
+                  </ol>
+              </div>
+              <div id="subSectionFour" class="subsection scrollspy">
+                  <h3>IV. Before</h3>
+                  <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-login-old-2.png">
+                      <img class="stretch lazy" data-src="../img/study-img/study-login-old-2.png"/>
+                  </a>
+              </div>
+              <div id="subSectionFive" class="subsection scrollspy">
+                  <h3>V. After</h3>
+                  <a data-fslightbox="gallery" data-fslightbox href="../img/study-img/study-login-new-1.png">
+                      <img class="stretch lazy" data-src="../img/study-img/study-login-new-1.png"/>
+                  </a>
+              </div>
+              <div id="subSectionSix" class="subsection scrollspy">
+                  <h3>VI. Results</h3>
+                  <ol>
+                      <li>Adding more specific password validation copy would reduce the number of repeated password errors per session.<br><b class="text-blue">53% decrease in repeated password errors per session.</b></li>
+                      <li>Adding a show/hide mechanism to the password field would reduce overall password errors<br><b class="text-blue">27% decrease in incorrect password errors.</b></li>
+                      <li>Removing all extraneous links, including global navigation and footer navigation, would increase click through rate to the member area homepage<br><b class="text-blue">23% increase in CTR from sign in page to member area.</b></li>
+                  </ol>
+              </div>
+              <br/>
+              <a class="button" href="https://rbelopolsky.github.io/#mainContent">Back to case studies</a>
+          </div>
+          <div class="columns three offset-by-one hidden-s">
+              <div id="tableOfContents" class="toc u-pull-right" data-margin-top="40">
+                  <p class="caps">TABLE OF CONTENTS</p>
+                  <ul class="unstyled">
+                      <li class="active"><a href="#subSectionOne"><span class="toc-number">I.</span>Goals</a></li>
+                      <li><a href="#subSectionTwo"><span class="toc-number">II.</span>Research</a></li>
+                      <li><a href="#subSectionThree"><span class="toc-number">III.</span>Hypotheses</a></li>
+                      <li><a href="#subSectionFour"><span class="toc-number">IV.</span>Before</a></li>
+                      <li><a href="#subSectionFive"><span class="toc-number">V.</span>After</a></li>
+                      <li><a href="#subSectionSix"><span class="toc-number">VI.</span>Results</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
   </div>
-  <br/><br/><br/>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="../js/sticky.min.js"></script>
-<script src="../js/zepto.min.js"></script>
-<script src="../js/lazyload.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.0.2/smooth-scroll.min.js"></script>
-<script src="../js/custom.js"></script>
-<script src="../js/vanilla-scrollspy.js"></script>
-<script src="../js/fslightbox.min.js"></script>
-
-</body>
-</html>
+</div>
