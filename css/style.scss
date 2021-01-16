@@ -282,6 +282,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #2F3540;
   line-height: 1.2;
+  font-family: 'Lora', serif;
+  font-weight: 500;
 }
 
 h1 {
@@ -322,18 +324,14 @@ h4 {
     line-height: 1.35;
   }
 }
-
-@media (max-width: 400px) {
-  .homepage-headline {
-    font-size: 2.7rem;
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 320px) {
-  .homepage-headline {
-    font-size: 2.2rem;
-    line-height: 1.5;
+.homepage-headline {
+  @media (max-width: 400px) {
+      font-size: 2.7rem;
+      line-height: 1.5;
+    }
+  @media (max-width: 320px) {
+      font-size: 2.2rem;
+      line-height: 1.5;
   }
 }
 
@@ -351,7 +349,7 @@ p {
 }
 
 .quote {
-  font-family: 'Fraunces', serif;
+  font-family: 'Lora', serif;
   font-weight: 500;
 }
 
@@ -378,6 +376,11 @@ p {
   position: fixed;
   right: 30px;
   top: 24px;
+
+  a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #8C8681;
+  }
 }
 
 .page-label {
@@ -473,6 +476,14 @@ a {
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
+}
+.button-solid{
+  background-color: #8C8681;
+  color:#fff;
+  border: 0;
+  &:hover{
+    background-color: #D9D1C7!important;
+  }
 }
 
 input {
