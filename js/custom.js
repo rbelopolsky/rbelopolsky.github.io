@@ -3,7 +3,7 @@
 
 // Initiate smooth scroll
 var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000,
+    speed: 300,
     easing: 'easeInOutCubic',
     offset: 20
 });

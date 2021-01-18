@@ -42,6 +42,9 @@
   position: relative;
   overflow: hidden;
 }
+.section-paper{
+  background: #F2EDE4;
+}
 
 img.splash {
   position: absolute;
@@ -676,6 +679,8 @@ label > .label-body {
 
 ul {
   list-style: circle inside;
+  padding-left: 0;
+  margin-top: 0;
 }
 
 ol {
@@ -684,21 +689,9 @@ ol {
   margin-top: 0;
 }
 
-ul {
-  padding-left: 0;
-  margin-top: 0;
-
-  ul, ol {
-    margin: 1.5rem 0 1.5rem 3rem;
-    font-size: 90%;
-  }
-}
-
-ol {
-  ol, ul {
-    margin: 1.5rem 0 1.5rem 3rem;
-    font-size: 90%;
-  }
+.adjust-indent{
+  list-style-position: outside;
+  margin-left: 30px;
 }
 
 li {
