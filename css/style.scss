@@ -285,8 +285,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #2F3540;
   line-height: 1.2;
-  font-family: 'Lora', serif;
-  font-weight: 500;
+  // font-family: 'Lora', serif;
 }
 
 h1 {
@@ -317,10 +316,10 @@ h4 {
     line-height: 1.25;
   }
 
-  h3 {
-    font-size: 3.0rem;
-    line-height: 1.3;
-  }
+  // h3 {
+  //   font-size: 3.0rem;
+  //   line-height: 1.3;
+  // }
 
   h4 {
     font-size: 2.4rem;
@@ -456,7 +455,6 @@ a {
   transition: 250ms ease;
 
   &:hover {
-    color: #8C8681;
     cursor: pointer;
   }
 }
@@ -475,18 +473,18 @@ a {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #8C8681;
+  border: 1px solid #555;
   cursor: pointer;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
 }
 .button-solid{
-  background-color: #8C8681;
+  background-color: #1dc999;
   color:#fff;
   border: 0;
   &:hover{
-    background-color: #D9D1C7!important;
+    opacity: .65;
   }
 }
 
@@ -502,7 +500,7 @@ input {
     white-space: nowrap;
     background-color: transparent;
     border-radius: 4px;
-    border: 1px solid #8C8681;
+    border: 1px solid #1dc999;
     cursor: pointer;
     box-sizing: border-box;
     font-weight: 400;
@@ -511,23 +509,22 @@ input {
 }
 
 .button:hover, button:hover {
-  background: #8C8681;
-  color: #fff;
+  opacity: .65;
   outline: 0;
   cursor: pointer;
 }
 
 input {
   &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover {
-    background: #8C8681;
-    color: #fff;
+    background: #1dc999;
+    // color: #fff;
     outline: 0;
     cursor: pointer;
   }
 }
 
 .button:focus, button:focus {
-  background: #8C8681;
+  background: #1dc999s;
   color: #fff;
   outline: 0;
   cursor: pointer;
@@ -535,7 +532,7 @@ input {
 
 input {
   &[type="submit"]:focus, &[type="reset"]:focus, &[type="button"]:focus {
-    background: #8C8681;
+    background: #1dc999;
     color: #fff;
     outline: 0;
     cursor: pointer;
@@ -680,19 +677,18 @@ label > .label-body {
 
 ul {
   list-style: circle inside;
-  padding-left: 0;
+  list-style-position: outside;
   margin-top: 0;
 }
 
 ol {
   list-style: decimal inside;
-  padding-left: 0;
+  list-style-position: outside;
   margin-top: 0;
 }
 
 .adjust-indent{
   list-style-position: outside;
-  margin-left: 30px;
 }
 
 li {
@@ -721,7 +717,9 @@ ul {
     display: inline-block;
     margin-right: 4rem;
   }
-
+  &.toolkit-list, &.feature-list{
+    padding-left: 0;
+  }
   &.toolkit-list li img {
     width: 50px;
     height: auto;
@@ -896,7 +894,7 @@ span.toc-number {
 }
 
 .toc li.active a {
-  color: #8C8681;
+  color: #1dc999;
 }
 
 .fadable {
@@ -958,11 +956,11 @@ span.toc-number {
   opacity: 1;
 }
 
-.subsection a img:hover, .article-wide img:hover {
-  transform: scale(1.05);
-  transition: 250ms cubic-bezier(0.18, 0.89, 0.32, 1.5);
-  opacity: .7;
-}
+// .subsection a img:hover, .article-wide img:hover {
+//   transform: scale(1.05);
+//   transition: 250ms cubic-bezier(0.18, 0.89, 0.32, 1.5);
+//   opacity: .7;
+// }
 
 #subSectionFive li, #subSectionSix li {
   margin-bottom: 40px;
@@ -1018,7 +1016,7 @@ span.toc-number {
   display: inline-block;
   position: relative;
   text-align: center;
-  color: #8C8681;
+  color: #1dc999;
   text-decoration: none;
   font-size: 20px;
   overflow: hidden;
